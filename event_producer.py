@@ -47,19 +47,32 @@ user_data_list = [
         "session_id": generate_random_string(),
         "event_properties": {
             "location": "US",
-            "gender": "male"
+            "gender": "male",
+            "price": "10"
         }
     },
     {
-        "user_id": "srini.k@gmail.com",
+        "user_id": "srini123@gmail.com",
         "event_timestamp": int(time.time()),
         "event_type": "add_to_cart",
         "product_id": "ipad",
         "session_id": generate_random_string(),
         "event_properties": {
             "location": "US",
-            "gender": "female"
-        }
+            "gender": "female",
+            "price": "20"
+        },
+    {
+        "user_id": "srini456@gmail.com",
+        "event_timestamp": int(time.time()),
+        "event_type": "purchase",
+        "product_id": "ipad",
+        "session_id": generate_random_string(),
+        "event_properties": {
+            "location": "US",
+            "gender": "female",
+            "price": "30"
+        }        
     }
 ]
 
