@@ -29,3 +29,4 @@
 1. We can build a Lambda function to call the AWS glue job to do the ETL transfrormation
 2. Lambda function provides triggers to make sure Glue job can be run only when new files arrive in the S3 bucket
 3. Lambda function will need an IAM role assigned to it with appropriate READ/WRITE access to S3 buckets and AWS console access
+4. We can also add some pre-checks in the lambda function to make sure the files are authentic and complete and ready to be processed
