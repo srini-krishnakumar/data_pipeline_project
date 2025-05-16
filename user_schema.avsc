@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "UserActivity",
+  "namespace": "com.example.events",
+  "fields": [
+    {"name": "user_id", "type": "string"},
+    {"name": "event_timestamp", "type": "long", "logicalType": "timestamp-millis"},
+    {"name": "event_type", "type": "string", "doc": "e.g., page_view, add_to_cart, purchase"},
+    {"name": "product_id", "type": ["null", "string"], "default": null},
+    {"name": "session_id", "type": "string"},
+    {"name": "event_properties", "type": {"type": "map", "values": "string"}, "default": {}}
+  ]
+}
